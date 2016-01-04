@@ -1,0 +1,16 @@
+{
+  "name": "bespoke-support/symfony-doctrine-carbon",
+  "license": "MIT",
+  "description": "Use of Carbon in Symfony and Doctrine",
+  "authors": [
+    {
+      "name": "Richard Seymour",
+      "email": "web@bespoke.support"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BespokeSupport\\SymfonyDoctrineCarbon\\": "src/"
+    }
+  }
+}
