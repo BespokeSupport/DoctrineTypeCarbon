@@ -1,16 +1,24 @@
 {
-  "name": "bespoke-support/symfony-doctrine-carbon",
+  "name": "bespoke-support/doctrine-type-carbon",
+  "description": "Carbon DataType for Doctrine",
   "license": "MIT",
-  "description": "Use of Carbon in Symfony and Doctrine",
   "authors": [
     {
       "name": "Richard Seymour",
       "email": "web@bespoke.support"
     }
   ],
+  "require": {
+    "nesbot/carbon": ">=1.20 <2.0.0",
+    "doctrine/orm": ">=2.4 <3.0.0"
+  },
+  "require-dev" : {
+    "bespoke-support/symfony-test-application": "dev-master"
+  },
   "autoload": {
-    "psr-4": {
-      "BespokeSupport\\SymfonyDoctrineCarbon\\": "src/"
-    }
+    "psr-4": {"BespokeSupport\\DoctrineTypeCarbon\\" : "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": { "BespokeSupport\\DoctrineTypeCarbon\\Tests\\": "tests/" }
   }
 }
